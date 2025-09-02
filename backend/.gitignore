@@ -1,0 +1,323 @@
+# ================================
+# LEADGEN BACKEND - .gitignore
+# ================================
+
+# ================================
+# NODE.JS
+# ================================
+# Dependencies
+node_modules/
+jspm_packages/
+
+# Package manager lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ================================
+# TYPESCRIPT & BUILD
+# ================================
+# Build output
+dist/
+build/
+out/
+lib/
+
+# TypeScript cache
+*.tsbuildinfo
+.tsbuildinfo
+
+# ================================
+# ENVIRONMENT VARIABLES (CRITICAL)
+# ================================
+# Never commit environment files
+.env
+.env.*
+!.env.example
+
+# ================================
+# GOOGLE CLOUD CREDENTIALS (CRITICAL)
+# ================================
+# Service account keys - NEVER COMMIT THESE
+gcp-key.json
+service-account*.json
+*-service-account.json
+google-credentials.json
+credentials.json
+key.json
+*.pem
+
+# Google Cloud SDK
+.gcloud/
+.gsutil/
+
+# ================================
+# DATABASE
+# ================================
+# Local database files
+data/
+db/
+*.db
+*.sqlite
+*.sqlite3
+
+# Database dumps and backups
+*.dump
+*.sql
+*.bak
+backup/
+backups/
+
+# ================================
+# LOGS
+# ================================
+# All log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# Runtime logs
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ================================
+# CACHE & TEMPORARY
+# ================================
+# Cache directories
+.cache/
+.npm
+.eslintcache
+.stylelintcache
+.node_repl_history
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+.temp/
+
+# Coverage directory
+coverage/
+*.lcov
+.nyc_output/
+
+# ================================
+# FILE UPLOADS & PROCESSING
+# ================================
+# Uploaded files (during development)
+uploads/
+public/uploads/
+storage/
+files/
+
+# AI processing temporary files
+ai-temp/
+processing/
+temp-images/
+
+# ================================
+# DEVELOPMENT TOOLS
+# ================================
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Debug files
+.debug
+debug.log
+inspector/
+
+# ================================
+# RUNTIME DATA
+# ================================
+# Process IDs
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime data
+pids/
+logs/
+results/
+
+# ================================
+# TESTING
+# ================================
+# Test coverage
+coverage/
+.nyc_output/
+junit.xml
+test-results/
+.coverage/
+
+# Test databases
+test.db
+test.sqlite
+test-data/
+
+# ================================
+# SECURITY & KEYS
+# ================================
+# SSL certificates and keys
+*.key
+*.cert
+*.csr
+*.crt
+*.p12
+*.pfx
+
+# JWT secrets (if separate files)
+jwt-secret.txt
+secrets/
+.secrets/
+
+# API keys (if in separate files)
+api-keys.json
+keys/
+
+# ================================
+# BACKUP FILES
+# ================================
+# Backup files
+*.backup
+*.bak
+*.orig
+*.swp
+
+# ================================
+# PACKAGE MANAGERS
+# ================================
+# Yarn
+.yarn-integrity
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# NPM
+.npm/
+
+# ================================
+# DOCKER (if used)
+# ================================
+.dockerignore
+docker-compose.override.yml
+.docker/
+Dockerfile.dev
+
+# ================================
+# MONITORING & ANALYTICS
+# ================================
+# Performance monitoring files
+.monitoring/
+.analytics/
+.sentry/
+
+# Health check files
+.health/
+health.json
+
+# ================================
+# DOCUMENTATION
+# ================================
+# Generated documentation
+docs/build/
+api-docs/generated/
+
+# ================================
+# MISCELLANEOUS
+# ================================
+# Serverless
+.serverless/
+
+# Webpack
+.webpack/
+
+# Rollup
+.rollup/
+
+# Parcel
+.parcel-cache/
+
+# FuseBox
+.fusebox/
+
+# DynamoDB Local
+.dynamodb/
+
+# TernJS
+.tern-port
+
+# Firebase
+.firebase/
+
+# MacOS
+.DS_Store
+.DS_Store?
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+.directory
+
+# ================================
+# APPLICATION SPECIFIC
+# ================================
+# Exported data files
+exports/
+*.csv
+*.xlsx
+*.pdf
+
+# Email templates (if generated)
+email-templates/compiled/
+
+# Reports
+reports/
+*.report
+
+# Migrations (if sensitive)
+migrations/data/
+
+# ================================
+# DEVELOPMENT ONLY
+# ================================
+# Development utilities
+dev-utils/
+scripts/dev/
+.dev/
+
+# Local configuration overrides
+config.local.json
+settings.local.json
+
+# ================================
+# PERFORMANCE & PROFILING
+# ================================
+# Performance profiles
+*.profile
+*.trace
+profiling/
+
+# Memory dumps
+*.heapsnapshot
+*.heapdump
+
+# ================================
+# END OF BACKEND .gitignore
+# ================================
